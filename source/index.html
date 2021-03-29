@@ -13,15 +13,15 @@
         <a class="page-header__logotext" href="">
           <img src="img/logo-name.svg" width="101" height="18" alt="логотип текста">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle"></button>
-          <span class="visually-hidden">Открыть меню</span>
-          <div class="main-nav__wrapper">
+        <button class="main-nav__toggle"></button>
+        <span class="visually-hidden">Открыть меню</span>
+        <div class="main-nav__wrapper">
+          <nav class="main-nav"></nav>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">
-                  Главная
-                </a>
+                Главная
+              </a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="form.html">
@@ -34,8 +34,8 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -47,7 +47,7 @@
             <p class="promo-text">
               Занялся собой? Займись котом!
             </p>
-            <img src="img/can-mobile-1.svg" alt="питание">
+            <img src="img/can-mobile-1.svg" width="280" height="270" alt="питание">
             <a href="" class="promo_button">Подобрать программу</a>
         </div>
       </section>
@@ -123,12 +123,12 @@
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
           <div class="example-wrapper">
-            <b class="example-weighing">
-              5 <span>кг</span>
-            </b>
-            <b class="example-time">
-              60 <span>дней</span>
-            </b>
+            <dl>
+              <dt class="example-weighing">5 КГ</dt>
+              <dt class="example-weighing__text">снижение веса</dt>
+              <dt class="example-time">60 дней</dt>
+              <dt class="example-time__text">затрачено времени</dt>
+            </dl>
             <p class="example-total">
               Затраты на питание: 15 000 РУБ.
             </p>
@@ -166,7 +166,7 @@
     </main>
       <footer class="page-footer">
         <div class="container">
-          <img src="img/footer-logo-2.svg" alt="логотип">
+          <img src="img/footer-logo-2.svg" width="128" height="24" alt="логотип">
           <ul class="social-list">
             <li class="social-item">
               <a href="" class="social-link">
