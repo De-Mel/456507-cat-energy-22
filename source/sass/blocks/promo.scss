@@ -1,0 +1,36 @@
+.promo {
+  background-image: url(../img/background-desktop-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 302px;
+    position: absolute;
+    background-color: rgba($basic_green, 0.85);
+  }
+}
+
+.promo-title {
+  // font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $basic_white;
+}
+
+.promo-text {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $basic_white;
+}
+
+.promo_button {
+  padding: 8px 73px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}

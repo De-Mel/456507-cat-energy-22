@@ -1,0 +1,22 @@
+.page-footer {
+  background-color: $basic_grey;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.social-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

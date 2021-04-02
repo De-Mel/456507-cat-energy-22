@@ -1,0 +1,25 @@
+.page-header {
+
+}
+
+.main-nav__toggle {
+  display: block;
+  cursor: pointer;
+  width: 24px;
+  height: 16px;
+  border: none;
+  border-top: 1.5px solid $basic_black;
+  border-bottom: 1.5px solid $basic_black;
+  background-color: transparent;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    background-color: $basic_black;
+    left: 0;
+    top: 5px;
+  }
+}
+
