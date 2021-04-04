@@ -1,6 +1,21 @@
+.example {
+  background-color: #eaeaea;
+}
+
 .example-title {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 33px;
   font-size: 36px;
   line-height: 40px;
+}
+
+.example-text {
+  margin: 0;
+}
+
+.example-table {
+  display: flex;
 }
 
 .example-both {
@@ -20,4 +35,24 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.slider-button {
+  border: none;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: &basic_black;
+  padding-bottom: 31px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &__prev {
+    padding-left: 42px;
+    padding-right: 108px;
+  }
 }

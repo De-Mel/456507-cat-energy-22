@@ -1,0 +1,24 @@
+.programm-title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.programm-text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.programm-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.programm-form label {
+  text-transform: uppercase;
+  color: $special_dark-grey;
+}
+
+.programm-wrapper .field {
+  border: 1px solid #e7e7e7;
+}

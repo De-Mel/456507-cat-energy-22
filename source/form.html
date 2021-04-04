@@ -2,40 +2,45 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кэт энерджи</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="container">
-        <a class="page-header__logoicon" href="">
-          <img src="img/logo-mobile.svg" width="34" height="38" alt="логотип картинки">
-        </a>
-        <a class="page-header__logotext" href="">
-          <img src="img/logo-name.svg" width="101" height="18" alt="логотип текста">
-        </a>
-        <button class="main-nav__toggle"></button>
-        <span class="visually-hidden">Открыть меню</span>
         <div class="main-nav__wrapper">
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">
-                Главная
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">
-                  Каталог продукции
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">
-                  Подбор программы
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <a class="page-header__logoicon" href="index.html">
+            <img src="img/logo-mobile.svg" width="34" height="38" alt="логотип картинки">
+          </a>
+          <a class="page-header__logotext" href="index.html">
+            <img src="img/logo-name.svg" width="101" height="18" alt="логотип текста">
+          </a>
+          <button class="main-nav__toggle"></button>
+          <span class="visually-hidden">Открыть меню</span>
         </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="page-main">
@@ -48,18 +53,30 @@
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
           <form class="programm-form" action="#" method="post">
-            <label for="name">ИМЯ:*</label>
-            <input type="text" name="name" id="name" placeholder="БАРСИК" required>
-            <label for="weight">Вес (кг):*</label>
-            <input type="text" name="weight" id="weight" value="7" required>
-            <label for="age">Возраст (лет):</label>
-            <input type="number" name="age" id="age" value="7">
-            <input type="radio" name="programm" id="slim" checked>
-            <label for="slim">Похудение</label>
-            <input type="radio" name="programm" id="gain">
-            <label for="gain">Набор массы</label>
-            <input type="radio" name="programm" id="advice">
-            <label for="advice">Не знаю (Нужен ваш совет)</label>
+            <div class="programm-wrapper">
+              <label for="name">Имя:*</label>
+              <input class="field" type="text" name="name" id="name" placeholder="БАРСИК" required>
+            </div>
+            <div class="programm-wrapper">
+              <label for="weight">Вес (кг):*</label>
+              <input class="field" type="text" name="weight" id="weight" value="7" required>
+            </div>
+            <div class="programm-wrapper">
+              <label for="age">Возраст (лет):</label>
+              <input class="field" type="number" name="age" id="age" value="7">
+            </div>
+            <div class="programm-wrapper">
+              <input type="radio" name="programm" id="slim" checked>
+              <label for="slim">Похудение</label>
+            </div>
+            <div class="programm-wrapper">
+              <input type="radio" name="programm" id="gain">
+              <label for="gain">Набор массы</label>
+            </div>
+            <div class="programm-wrapper">
+              <input type="radio" name="programm" id="advice">
+              <label for="advice">Не знаю (Нужен ваш совет)</label>
+            </div>
           </form>
         </div>
       </section>
@@ -71,9 +88,9 @@
           </h3>
           <form class="owner-form" action="#" method="post">
             <label for="email">E-mail:*</label>
-            <input type="email" name="email" id="email" placeholder="кuklachev@gmail.com" required>
+            <input class="field" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" required>
             <label for="tel">Телефон:*</label>
-            <input type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90" required>
+            <input class="field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90" required>
           </form>
         </div>
       </section>
@@ -108,20 +125,17 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts contacts-grey">
         <div class="container">
           <h3 class="contacts-title">
             Приглашаем к сотрудничеству дилеров!
           </h3>
-          <p class="contacts-text">
+          <p class="contacts-text arial-grey">
             ул. Большая
             Конюшенная, д. 19/8
             Санкт-Петербург
           </p>
         </div>
-      </section>
-
-      <section class="map">
         <h2 class="visually-hidden">Карта проезда</h2>
         <img src="img/location.jpg" width="320" height="362" alt="Карта">
       </section>

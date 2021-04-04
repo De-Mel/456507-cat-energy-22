@@ -1,11 +1,70 @@
+.works {
+  margin-bottom: 42px;
+}
+
 .works-title {
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  padding-bottom: 38px;
   // color: &basic_black;
 }
 
 .works-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.works-item {
+  position: relative;
+  padding-left: 80px;
+  margin: 0;
+  padding-bottom: 26px;
+
+  &__substances::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/substances.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &__water::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/water.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &__eat::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/eat.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &__weighing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/weighing.svg") no-repeat;
+    background-size: cover;
+  }
 }
 
 .arial-grey {
