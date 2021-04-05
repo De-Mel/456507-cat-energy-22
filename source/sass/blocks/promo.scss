@@ -46,7 +46,13 @@
   margin: 0;
 }
 
+.promo__content--img img {
+  display: block;
+  margin: 0 auto;
+}
+
 .promo-button {
+  display: block;
   padding: 8px 73px;
   font-size: 14px;
   line-height: 18px;

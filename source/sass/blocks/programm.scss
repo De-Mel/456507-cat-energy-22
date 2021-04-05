@@ -1,12 +1,15 @@
 .programm-title {
   font-size: 36px;
   line-height: 36px;
+  padding: 27px 0 37px;
 }
 
 .programm-text {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-bottom: 39px;
+  padding-right: 54px;
 }
 
 .programm-form {
@@ -14,11 +17,45 @@
   flex-direction: column;
 }
 
-.programm-form label {
-  text-transform: uppercase;
-  color: $special_dark-grey;
+.programm-wrapper {
+  display: flex;
+  align-items: baseline;
+
+  &__radio {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
-.programm-wrapper .field {
+.label {
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $special_dark-grey;
+  padding-right: 13px;
+}
+
+.field {
   border: 1px solid #e7e7e7;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.field[type="text"],
+.field[type="number"] {
+  padding-left: 16px;
+  color: $special_dark-grey;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.field-radio {
+  margin-right: 16px;
+}
+
+.radio {
+  margin-bottom: 13px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
 }

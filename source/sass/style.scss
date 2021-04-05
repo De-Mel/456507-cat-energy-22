@@ -2,13 +2,13 @@
 // Global
 
 @import "global/variables.scss";
-@import "global/global.scss";
 @import "global/fonts.scss";
+@import "global/global.scss";
 
 // Blocks
 
 @import "blocks/page.scss";
-@import "blocks/page-header.scss";
+// @import "blocks/page-header.scss";
 @import "blocks/button.scss";
 @import "blocks/main-nav__wrapper";
 @import "blocks/programm.scss";
@@ -16,6 +16,7 @@
 @import "blocks/catalog.scss";
 @import "blocks/works.scss";
 @import "blocks/example.scss";
+@import "blocks/slider.scss";
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";
 @import "blocks/page-footer.scss";
