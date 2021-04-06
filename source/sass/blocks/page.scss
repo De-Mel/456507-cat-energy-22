@@ -1,0 +1,50 @@
+.page {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: $basic_white;
+}
+
+.page__body {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.page__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0 19px;
+}
+
+.page__header-toggle {
+  display: block;
+  cursor: pointer;
+  width: 24px;
+  height: 16px;
+  border: none;
+  border-top: 1.5px solid $basic_black;
+  border-bottom: 1.5px solid $basic_black;
+  background-color: transparent;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    background-color: $basic_black;
+    left: 0;
+    top: 5px;
+  }
+}
+
+// .page-header {
+//   display: flex;
+
+//   &__logoicon {
+//     height: 66px;
+//   }
+// }

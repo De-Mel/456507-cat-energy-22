@@ -1,0 +1,68 @@
+.works {
+  margin-bottom: 42px;
+}
+
+.works__title {
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  padding-bottom: 38px;
+  // color: &basic_black;
+}
+
+.works__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.works__item {
+  position: relative;
+  padding-left: 80px;
+  margin: 0;
+  padding-bottom: 26px;
+
+  &-substances::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/substances.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &-water::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/water.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &-eat::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/eat.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &-weighing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/weighing.svg") no-repeat;
+    background-size: cover;
+  }
+}

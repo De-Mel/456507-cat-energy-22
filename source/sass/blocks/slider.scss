@@ -1,0 +1,27 @@
+.slider {
+  background-color: #eaeaea;
+}
+
+.slider__wrapper {
+  padding-top: 23px;
+}
+
+.slider__button {
+  border: none;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: &basic_black;
+  padding-bottom: 31px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &-prev {
+    padding-left: 42px;
+    padding-right: 108px;
+  }
+}

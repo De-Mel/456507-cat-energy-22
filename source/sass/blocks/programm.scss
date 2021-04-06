@@ -1,0 +1,61 @@
+.programm__title {
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 0 37px;
+}
+
+.programm__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-bottom: 39px;
+  padding-right: 54px;
+}
+
+.programm__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.programm__wrapper {
+  display: flex;
+  align-items: baseline;
+
+  &-radio {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.programm__form-label {
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $special_dark-grey;
+  padding-right: 13px;
+}
+
+.programm__form-field {
+  border: 1px solid #e7e7e7;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.programm__form-field[type="text"],
+.programm__form-field[type="number"] {
+  padding-left: 16px;
+  color: $special_dark-grey;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.programm__form-field__radio {
+  margin-right: 16px;
+}
+
+.programm__form-radio {
+  margin-bottom: 13px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+}
