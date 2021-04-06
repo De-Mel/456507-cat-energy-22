@@ -1,4 +1,4 @@
-.contacts-flex {
+.contacts__flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -6,11 +6,11 @@
   padding: 28px 0 28px 0;
 }
 
-.contacts-grey {
+.contacts__grey {
   background-color: $basic_grey;
 }
 
-.contacts-title {
+.contacts__title {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -19,7 +19,7 @@
   margin: 0;
 }
 
-.contacts-text {
+.contacts__text {
   line-height: 20px;
   width: 140px;
   margin: 0;

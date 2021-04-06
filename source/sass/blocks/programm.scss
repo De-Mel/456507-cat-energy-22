@@ -1,10 +1,10 @@
-.programm-title {
+.programm__title {
   font-size: 36px;
   line-height: 36px;
   padding: 27px 0 37px;
 }
 
-.programm-text {
+.programm__text {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -12,37 +12,37 @@
   padding-right: 54px;
 }
 
-.programm-form {
+.programm__form {
   display: flex;
   flex-direction: column;
 }
 
-.programm-wrapper {
+.programm__wrapper {
   display: flex;
   align-items: baseline;
 
-  &__radio {
+  &-radio {
     display: flex;
     align-items: baseline;
   }
 }
 
-.label {
+.programm__form-label {
   text-transform: uppercase;
   white-space: nowrap;
   color: $special_dark-grey;
   padding-right: 13px;
 }
 
-.field {
+.programm__form-field {
   border: 1px solid #e7e7e7;
   height: 45px;
   width: 100%;
   margin-bottom: 14px;
 }
 
-.field[type="text"],
-.field[type="number"] {
+.programm__form-field[type="text"],
+.programm__form-field[type="number"] {
   padding-left: 16px;
   color: $special_dark-grey;
   font-weight: 400;
@@ -50,11 +50,11 @@
   line-height: 18px;
 }
 
-.field-radio {
+.programm__form-field__radio {
   margin-right: 16px;
 }
 
-.radio {
+.programm__form-radio {
   margin-bottom: 13px;
   text-transform: uppercase;
   color: $special_dark-grey-2;

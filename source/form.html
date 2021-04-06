@@ -8,17 +8,17 @@
 
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
-    <header class="page-header">
+  <body class="page__body">
+    <header class="page__header">
       <div class="container">
-        <div class="main-nav__wrapper">
-          <a class="page-header__logoicon" href="index.html">
+        <div class="page__header-wrapper">
+          <a class="page__header-logoicon" href="index.html">
             <img src="img/logo-mobile.svg" width="34" height="38" alt="логотип картинки">
           </a>
-          <a class="page-header__logotext" href="index.html">
+          <a class="page__header-logotext" href="index.html">
             <img src="img/logo-name.svg" width="101" height="18" alt="логотип текста">
           </a>
-          <button class="main-nav__toggle"></button>
+          <button class="page__header-toggle"></button>
           <span class="visually-hidden">Открыть меню</span>
         </div>
         <nav class="main-nav">
@@ -45,36 +45,36 @@
     <main class="page-main">
       <section class="programm">
         <div class="container">
-          <h2 class="programm-title">
+          <h2 class="programm__title">
             Подбор программы
           </h2>
-          <p class="programm-text">
+          <p class="programm__text">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
-          <form class="programm-form" action="#" method="post">
-            <div class="programm-wrapper">
-              <label class="label" for="name">Имя:*</label>
-              <input class="field" type="text" name="name" id="name" placeholder="БАРСИК" required autofocus>
+          <form class="programm__form" action="#" method="post">
+            <div class="programm__wrapper">
+              <label class="programm__form-label" for="name">Имя:*</label>
+              <input class="programm__form-field" type="text" name="name" id="name" placeholder="БАРСИК" required autofocus>
             </div>
-            <div class="programm-wrapper">
-              <label class="label" for="weight">Вес (кг):*</label>
-              <input class="field" type="text" name="weight" id="weight" value="7" required>
+            <div class="programm__wrapper">
+              <label class="programm__form-label" for="weight">Вес (кг):*</label>
+              <input class="programm__form-field" type="text" name="weight" id="weight" value="7" required>
             </div>
-            <div class="programm-wrapper">
-              <label class="label" for="age">Возраст (лет):</label>
-              <input class="field" type="number" name="age" id="age" value="7">
+            <div class="programm__wrapper">
+              <label class="programm__form-label" for="age">Возраст (лет):</label>
+              <input class="programm__form-field" type="number" name="age" id="age" value="7">
             </div>
-            <div class="programm-wrapper__radio">
-              <input class="field-radio" type="radio" name="programm" id="slim" checked>
-              <label class="radio" for="slim">Похудение</label>
+            <div class="programm__wrapper-radio">
+              <input class="programm__form-field__radio" type="radio" name="programm" id="slim" checked>
+              <label class="programm__form-radio" for="slim">Похудение</label>
             </div>
-            <div class="programm-wrapper__radio">
-              <input class="field-radio" type="radio" name="programm" id="gain">
-              <label class="radio" for="gain">Набор массы</label>
+            <div class="programm__wrapper-radio">
+              <input class="programm__form-field__radio" type="radio" name="programm" id="gain">
+              <label class="programm__form-radio" for="gain">Набор массы</label>
             </div>
-            <div class="programm-wrapper__radio">
-              <input class="field-radio" type="radio" name="programm" id="advice">
-              <label class="radio" for="advice">Не знаю (Нужен ваш совет)</label>
+            <div class="programm__wrapper-radio">
+              <input class="programm__form-field__radio" type="radio" name="programm" id="advice">
+              <label class="programm__form-radio" for="advice">Не знаю (Нужен ваш совет)</label>
             </div>
           </form>
         </div>
@@ -82,17 +82,17 @@
 
       <section class="owner">
         <div class="container">
-          <h3 class="owner-title">
+          <h3 class="owner__title">
             Контактные данные (владельца кота)
           </h3>
-          <form class="owner-form" action="#" method="post">
-            <div class="programm-wrapper">
-              <label class="label" for="email">E-mail:*</label>
-              <input class="field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+          <form class="owner__form" action="#" method="post">
+            <div class="programm__wrapper">
+              <label class="programm__form-label" for="email">E-mail:*</label>
+              <input class="programm__form-field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
             </div>
-            <div class="programm-wrapper">
-              <label class="label" for="tel">Телефон:*</label>
-              <input class="field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90" required>
+            <div class="programm__wrapper">
+              <label class="programm__form-label" for="tel">Телефон:*</label>
+              <input class="programm__form-field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90" required>
             </div>
           </form>
         </div>
@@ -100,11 +100,11 @@
 
       <section class="comments">
         <div class="container">
-          <h3 class="comments-title">
+          <h3 class="comments__title">
             Комментарий
           </h3>
-          <form class="comments-form" action="#" method="post">
-            <label for="manners"></label>
+          <form class="comments__form" action="#" method="post">
+            <label class="" for="manners"></label>
             <textarea class="" name="manners" id="manners" placeholder="Расскажите обо всех повадках кота"></textarea>
           </form>
         </div>
@@ -112,10 +112,10 @@
 
       <section class="additionally">
         <div class="container">
-          <h3 class="additionally-title">
+          <h3 class="additionally__title">
             Дополнительно
           </h3>
-          <form class="additionally-form" action="#" method="post">
+          <form class="additionally__form" action="#" method="post">
             <input type="checkbox" name="sugar" id="sugar" checked>
             <label for="sugar">сахарозаменитель</label>
             <input type="checkbox" name="water" id="water">
@@ -125,18 +125,18 @@
             <input type="checkbox" name="vitamins" id="vitamins">
             <label for="vitamins">витамины</label>
           </form>
-          <button class="additionally-button button" type="submit">отправить заявку</button>
-          <p class="additionally-text">* — Обязательные поля</p>
+          <button class="additionally__button button" type="submit">отправить заявку</button>
+          <p class="additionally__text">* — Обязательные поля</p>
         </div>
       </section>
 
-      <section class="contacts contacts-grey">
+      <section class="contacts contacts__grey">
         <div class="container">
-          <div class="contacts-flex">
-            <h3 class="contacts-title">
+          <div class="contacts__flex">
+            <h3 class="contacts__title">
               приглашаем к сотрудничеству дилеров!
             </h3>
-            <p class="contacts-text arial-grey">
+            <p class="contacts__text arial-grey">
               ул. Большая
               Конюшенная, д. 19/8
               Санкт-Петербург
@@ -147,7 +147,7 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта проезда</h2>
-        <img class="map-image" src="img/location.jpg" width="320" height="362" alt="Карта">
+        <img class="map__image" src="img/location.jpg" width="320" height="362" alt="Карта">
       </section>
 
     </main>

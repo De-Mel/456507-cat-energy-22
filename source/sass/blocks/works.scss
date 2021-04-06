@@ -2,7 +2,7 @@
   margin-bottom: 42px;
 }
 
-.works-title {
+.works__title {
   font-size: 36px;
   line-height: 40px;
   margin: 0;
@@ -10,19 +10,19 @@
   // color: &basic_black;
 }
 
-.works-list {
+.works__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.works-item {
+.works__item {
   position: relative;
   padding-left: 80px;
   margin: 0;
   padding-bottom: 26px;
 
-  &__substances::before {
+  &-substances::before {
     content: "";
     position: absolute;
     top: 0;
@@ -33,7 +33,7 @@
     background-size: cover;
   }
 
-  &__water::before {
+  &-water::before {
     content: "";
     position: absolute;
     top: 0;
@@ -44,7 +44,7 @@
     background-size: cover;
   }
 
-  &__eat::before {
+  &-eat::before {
     content: "";
     position: absolute;
     top: 0;
@@ -55,7 +55,7 @@
     background-size: cover;
   }
 
-  &__weighing::before {
+  &-weighing::before {
     content: "";
     position: absolute;
     top: 0;
@@ -65,13 +65,4 @@
     background: url("../img/weighing.svg") no-repeat;
     background-size: cover;
   }
-}
-
-.arial-grey {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special_dark-grey;
 }

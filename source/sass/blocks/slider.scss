@@ -2,11 +2,11 @@
   background-color: #eaeaea;
 }
 
-.slider-wrapper {
+.slider__wrapper {
   padding-top: 23px;
 }
 
-.slider-button {
+.slider__button {
   border: none;
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
@@ -20,7 +20,7 @@
   background-color: transparent;
   cursor: pointer;
 
-  &__prev {
+  &-prev {
     padding-left: 42px;
     padding-right: 108px;
   }

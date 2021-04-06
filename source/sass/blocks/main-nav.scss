@@ -1,0 +1,18 @@
+.main-nav {
+  display: none;
+
+  &__list {
+    margin: 0;
+    height: 0;
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 24px;
+    color: $basic_black;
+    // @media (min-width: $desktop-width) {
+    //   color: $basic_white;
+    // }
+  }
+}

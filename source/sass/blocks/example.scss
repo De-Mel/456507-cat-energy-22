@@ -2,7 +2,7 @@
   background-color: #eaeaea;
 }
 
-.example-title {
+.example__title {
   margin: 0;
   padding-top: 27px;
   padding-bottom: 33px;
@@ -10,11 +10,11 @@
   line-height: 40px;
 }
 
-.example-text {
+.example__text {
   margin: 0;
 }
 
-.example-table {
+.example__table {
   display: grid;
   grid-template-columns: repeat (2, 1fr);
   grid-column-gap: 31px;
@@ -22,14 +22,14 @@
   margin: 0;
 }
 
-.example-both {
+.example__both {
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
 
 
-  &__text {
+  &-text {
     font-size: 12px;
     line-height: 12px;
     margin: 0 auto;
@@ -39,7 +39,7 @@
   }
 }
 
-.example-total {
+.example__total {
   font-size: 14px;
   line-height: 20px;
   text-align: center;

@@ -1,10 +1,10 @@
-.catalog-wrapper {
+.catalog__wrapper {
   background-color: $basic_grey;
   padding: 0 33px 18px 20px;
   margin-bottom: 20px;
 }
 
-.catalog-title {
+.catalog__title {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -13,7 +13,7 @@
   margin: 0;
   position: relative;
 
-  &__slim::before {
+  &-slim::before {
     content: "";
     position: absolute;
     background-image: url("../img/cat_slimming.svg");
@@ -26,7 +26,7 @@
     left: -10px;
   }
 
-  &__gain::before {
+  &-gain::before {
     content: "";
     position: absolute;
     background-image: url("../img/cat_gain.svg");
@@ -40,7 +40,7 @@
   }
 }
 
-.catalog-text {
+.catalog__text {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -61,7 +61,7 @@
   }
 }
 
-.catalog-button {
+.catalog__button {
   font-size: 16px;
   line-height: 16px;
   text-align: center;
