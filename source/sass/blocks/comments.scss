@@ -1,0 +1,24 @@
+.comments {
+  margin-bottom: 23px;
+
+  &__title {
+    padding-bottom: 38px;
+  }
+
+  &__form-textarea {
+    border: 1px solid #e7e7e7;
+    height: 151px;
+    width: 100%;
+  }
+}
+
+.comments__form-textarea::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 15px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+  letter-spacing: 0.1;
+}

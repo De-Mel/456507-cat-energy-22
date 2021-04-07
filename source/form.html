@@ -54,7 +54,7 @@
           <form class="programm__form" action="#" method="post">
             <div class="programm__wrapper">
               <label class="programm__form-label" for="name">Имя:*</label>
-              <input class="programm__form-field" type="text" name="name" id="name" placeholder="БАРСИК" required autofocus>
+              <input class="programm__form-field" type="text" name="name" id="name" placeholder="Барсик" required autofocus>
             </div>
             <div class="programm__wrapper">
               <label class="programm__form-label" for="weight">Вес (кг):*</label>
@@ -82,7 +82,7 @@
 
       <section class="owner">
         <div class="container">
-          <h3 class="owner__title">
+          <h3 class="owner__title h3-title">
             Контактные данные (владельца кота)
           </h3>
           <form class="owner__form" action="#" method="post">
@@ -100,30 +100,38 @@
 
       <section class="comments">
         <div class="container">
-          <h3 class="comments__title">
+          <h3 class="comments__title h3-title">
             Комментарий
           </h3>
           <form class="comments__form" action="#" method="post">
-            <label class="" for="manners"></label>
-            <textarea class="" name="manners" id="manners" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <label for="manners"></label>
+            <textarea class="comments__form-textarea" name="manners" id="manners" placeholder="Расскажите обо всех повадках кота"></textarea>
           </form>
         </div>
       </section>
 
       <section class="additionally">
         <div class="container">
-          <h3 class="additionally__title">
+          <h3 class="additionally__title h3-title">
             Дополнительно
           </h3>
           <form class="additionally__form" action="#" method="post">
-            <input type="checkbox" name="sugar" id="sugar" checked>
-            <label for="sugar">сахарозаменитель</label>
-            <input type="checkbox" name="water" id="water">
-            <label for="water">питьевая вода</label>
-            <input type="checkbox" name="milk" id="milk">
-            <label for="milk">молоко</label>
-            <input type="checkbox" name="vitamins" id="vitamins">
-            <label for="vitamins">витамины</label>
+            <div class="additionally__wrapper-checkbox">
+              <input class="additionally__form-field__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+              <label class="additionally__form-checkbox" for="sugar">сахарозаменитель</label>
+            </div>
+            <div class="additionally__wrapper-checkbox">
+              <input class="additionally__form-field__checkbox" type="checkbox" name="water" id="water">
+              <label class="additionally__form-checkbox" for="water">питьевая вода</label>
+            </div>
+            <div class="additionally__wrapper-checkbox">
+              <input class="additionally__form-field__checkbox" type="checkbox" name="milk" id="milk">
+              <label class="additionally__form-checkbox" for="milk">молоко</label>
+            </div>
+            <div class="additionally__wrapper-checkbox">
+              <input class="additionally__form-field__checkbox" type="checkbox" name="vitamins" id="vitamins">
+              <label class="additionally__form-checkbox" for="vitamins">витамины</label>
+            </div>
           </form>
           <button class="additionally__button button" type="submit">отправить заявку</button>
           <p class="additionally__text">* — Обязательные поля</p>
@@ -136,7 +144,7 @@
             <h3 class="contacts__title">
               приглашаем к сотрудничеству дилеров!
             </h3>
-            <p class="contacts__text arial-grey">
+            <p class="contacts__text">
               ул. Большая
               Конюшенная, д. 19/8
               Санкт-Петербург

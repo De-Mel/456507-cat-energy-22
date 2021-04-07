@@ -1,0 +1,52 @@
+.additionally {
+  padding-bottom: 32px;
+
+  &__title {
+    padding-bottom: 34px;
+  }
+
+  &__text {
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: $basic_black;
+    margin-top: 21px;
+  }
+}
+
+.additionally__form {
+  display: flex;
+  flex-direction: column;
+
+  &-field__checkbox {
+    margin-right: 16px;
+  }
+
+  &-checkbox {
+    padding-bottom: 13px;
+    text-transform: uppercase;
+    color: $basic_black;
+  }
+}
+
+.additionally__wrapper-checkbox {
+  display: flex;
+  align-items: baseline;
+}
+
+.additionally__button {
+  // display: block;
+  padding: 14px 77px;
+  text-transform: uppercase;
+  border: none;
+
+  &[type="submit"] {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%;
+  }
+}
