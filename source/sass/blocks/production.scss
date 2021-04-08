@@ -1,0 +1,33 @@
+.production {
+  padding-top: 27px;
+  border-top: 1px solid #d9d9d9;
+
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 49px;
+  }
+}
+
+// .production__wrapper {
+
+// }
+
+.production__list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 2px;
+  width: 140px;
+
+  &-rigth {
+    text-align: right;
+  }
+}
+
+.production__button {
+  display: block;
+  padding: 10px 109px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
