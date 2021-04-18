@@ -1,7 +1,32 @@
+.catalog__inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .catalog__wrapper {
   background-color: $basic_grey;
   padding: 0 33px 18px 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 279px 53px 52px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      padding-right: 314px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+    padding: 0 51px 55px;
+
+    &:last-child {
+      padding-right: 61px;
+    }
+  }
 }
 
 .catalog__title {
@@ -38,6 +63,69 @@
     top: 24px;
     left: -10px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 77px 0 24px;
+    // position: relative;
+
+    &-slim::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      width: 200px;
+      height: 211px;
+      top: 81px;
+      left: auto;
+      right: -217px;
+    }
+
+    &-gain::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      width: 268px;
+      height: 200px;
+      top: 91px;
+      left: auto;
+      right: -286px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 0 73px 162px;
+    // position: relative;
+
+    &-slim::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      width: 100px;
+      height: 106px;
+      top: 41px;
+      left: 0;
+    }
+
+    &-gain::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      width: 134px;
+      height: 100px;
+      top: 41px;
+      left: 0;
+      right: -286px;
+    }
+  }
 }
 
 .catalog__text {
@@ -59,6 +147,21 @@
     left: 0;
     width: 100%;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic_black;
+    padding-bottom: 52px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 23px;
+  }
 }
 
 .catalog__button {
@@ -67,4 +170,9 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -2,4 +2,12 @@
   background-color: $basic_green;
   color: $basic_white;
   text-align: center;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  display: block;
+  text-transform: uppercase;
+  font-size: inherit;
+  line-height: inherit;
+  width: 100%;
 }

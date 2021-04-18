@@ -1,10 +1,60 @@
 .slider {
   background-color: #eaeaea;
+  padding-bottom: 31px;
+
+  &__cats {
+    width: 293px;
+    height: 232px;
+    background-image: url("../img/before.svg"), url("../img/after.svg");
+    background-repeat: no-repeat, no-repeat;
+    // background-position: top left, top center;
+    background-position: top right, top center;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    padding-top: 23px;
+    display: grid;
+    grid-template-columns: 70px auto 70px;
+    max-width: 218px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 64px;
+    margin-top: 250px;
+    position: relative;
+
+    &__cats {
+      position: relative;
+      width: 708px;
+      height: 620px;
+      background-image: url("../img/beforeafter-all.svg");
+      top: -191px;
+      right: 6px;
+    }
+
+    &__wrapper {
+      // padding-top: 358px;
+      justify-content: space-around;
+      max-width: 590px;
+      margin-top: -214px;
+      padding: 0;
+    }
+
+    &__wrapper img {
+      width: 428px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
-.slider__wrapper {
-  padding-top: 23px;
-}
+// .slider__wrapper img {
+//   width: 428px;
+// }
 
 .slider__button {
   border: none;
@@ -16,12 +66,24 @@
   line-height: 20px;
   text-transform: uppercase;
   color: &basic_black;
-  padding-bottom: 31px;
   background-color: transparent;
   cursor: pointer;
 
-  &-prev {
-    padding-left: 42px;
-    padding-right: 108px;
+  // &-prev {
+  //   // padding-left: 42px;
+  //   // padding-right: 108px;
+  // }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $basic_black;
   }
 }
+
+// width: 293px;
+// height: 232px;
+// background-image: url(../img/before.svg), url(../img/after.svg);
+// background-repeat: no-repeat, no-repeat;
+// background-position: top right, top center;
+// margin: 0 auto;

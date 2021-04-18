@@ -1,9 +1,30 @@
+.contacts {
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+    background-color: $basic_white;
+    position: relative;
+    top: 150px;
+    left: 150px;
+  }
+}
+
 .contacts__flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 28px 0 28px 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 71px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 570px;
+    background-color: $basic_white;
+  }
 }
 
 .contacts__grey {
@@ -17,10 +38,20 @@
   color: #111111;
   width: 140px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contacts__text {
   line-height: 20px;
-  width: 140px;
+  max-width: 140px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    max-width: 159px;
+  }
 }
