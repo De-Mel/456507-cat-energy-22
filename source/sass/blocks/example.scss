@@ -1,6 +1,26 @@
 .example {
   background-color: #eaeaea;
-  padding-bottom: 42px;
+  // padding-bottom: 42px;
+
+  &__content {
+    @media (min-width: $desktop-width) {
+      background-color: #eaeaea;
+      display: flex;
+      // align-items: center;
+      padding-top: 70px;
+
+      &-item {
+        margin: 0 134px 0 0;
+      }
+    }
+  }
+
+  // .flex {
+  //   @media (min-width: $desktop-width) {
+  //     display: flex;
+  //     background-color: #eaeaea;
+  //   }
+  // }
 
   @media (min-width: $tablet-width) {
     background-color: inherit;
@@ -8,11 +28,27 @@
     border-top: none;
     // padding-bottom: 250px;
     padding-bottom: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 48%;
+      bottom: 0;
+      position: absolute;
+      background-color: #eaeaea;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    &::before {
+      background-color: transparent;
+    }
   }
+
+  // @media (min-width: $desktop-width) {
+  //   display: flex;
+  // }
 }
 
 .example__title {
@@ -28,6 +64,11 @@
     padding-top: 43px;
     padding-bottom: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+    padding-bottom: 76px;
+  }
 }
 
 .example__text {
@@ -36,6 +77,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
   }
 }
 
@@ -46,13 +91,18 @@
     display: grid;
     grid-template-columns: 366px auto;
   }
+
+  @media (min-width: $desktop-width) {
+    // display: flex;
+    // flex-direction: column;
+  }
 }
 
 .example__table {
   // display: flex;
   // justify-content: space-between;
   display: grid;
-  grid-template-columns: repeat (2, 1fr);
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 31px;
   padding-top: 40px;
   margin: 0;
@@ -105,6 +155,12 @@
     text-align: right;
     padding-top: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    text-align-last: left;
+    padding-top: 55px;
+  }
 }
 
 .example__total br {
@@ -113,6 +169,10 @@
   @media (min-width: $tablet-width) {
     display: block;
     padding-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 

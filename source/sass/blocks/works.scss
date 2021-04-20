@@ -37,7 +37,9 @@
     // flex-wrap: wrap;
     // position: relative;
     display: grid;
-    grid-template-columns: 54% auto;
+    // grid-template-columns: 54% auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -185,6 +187,7 @@
   @media (min-width: $desktop-width) {
     &-substances {
       margin-right: 0;
+      margin-bottom: 0;
     }
 
     &-eat {
