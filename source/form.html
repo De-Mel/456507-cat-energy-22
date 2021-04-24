@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кэт энерджи</title>
-
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -28,19 +27,19 @@
             <source media="(min-width: 1440px)" srcset="img/logo-d.svg">
             <img class="main-nav__logo" src="img/logo-t.svg" width="174" height="52" alt="логотип">
           </picture>
-          <ul class="main-nav__list site--list">
+          <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link main-nav__link--black" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
+              <a class="main-nav__link main-nav__link--black" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__item--active" href="catalog.html">
+              <a class="main-nav__link main-nav__link--black main-nav__item--active" href="#">
                 Подбор программы
               </a>
             </li>
@@ -131,11 +130,11 @@
                 <label class="programm__form-checkbox" for="vitamins">витамины</label>
               </div>
             </fieldset>
+            <div class="programm__inner">
+              <button class="programm__button button" type="submit">отправить заявку</button>
+              <p class="programm__text-small">* — Обязательные поля</p>
+            </div>
           </form>
-          <div class="programm__inner">
-            <button class="programm__button button" type="submit">отправить заявку</button>
-            <p class="programm__text-small">* — Обязательные поля</p>
-          </div>
         </div>
       </section>
 
@@ -156,7 +155,7 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта проезда</h2>
-        <img class="map__image" src="img/location.jpg" width="320" height="362" alt="Карта">
+        <img class="map__image" src="img/location-d.jpg" width="320" height="362" alt="Карта">
       </section>
 
     </main>

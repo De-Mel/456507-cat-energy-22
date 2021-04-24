@@ -55,6 +55,16 @@
       font-size: 20px;
       line-height: 30px;
       color: $basic_white;
+
+      // .main-nav__link--black {
+      //   color: inherit;
+      // }
+    }
+
+    &--black {
+      @media (min-width: $desktop-width) {
+        color: inherit;
+      }
     }
   }
 
