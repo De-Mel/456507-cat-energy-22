@@ -10,6 +10,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
+    z-index: 3;
   }
 
   &__list {
@@ -27,7 +28,7 @@
 
     @media (min-width: $desktop-width) {
       max-width: 488px;
-      z-index: 3;
+      // z-index: 3;
     }
   }
 
@@ -49,6 +50,14 @@
       line-height: 24px;
       padding: 0;
       border: none;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -166,9 +175,21 @@
     display: block;
     padding-top: 24px;
     margin: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
+
+    // &:hover {
+
+    // }
   }
 }

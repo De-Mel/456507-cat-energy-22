@@ -25,6 +25,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 11px 0 19px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -32,25 +33,47 @@
 }
 
 .page__header-toggle {
+  // display: block;
+  // cursor: pointer;
+  // width: 24px;
+  // height: 16px;
+  // border: none;
+  // border-top: 1.5px solid $basic_black;
+  // border-bottom: 1.5px solid $basic_black;
+  // background-color: transparent;
+  // // position: relative;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 24px;
+  //   height: 1.5px;
+  //   background-color: $basic_black;
+  //   left: 0;
+  //   top: 5px;
+  // }
+  // position: absolute;
+  top: 0;
+  right: 0;
   display: block;
-  cursor: pointer;
   width: 24px;
   height: 16px;
-  border: none;
-  border-top: 1.5px solid $basic_black;
-  border-bottom: 1.5px solid $basic_black;
   background-color: transparent;
-  position: relative;
+  cursor: pointer;
+  border: none;
+  // z-index: 100;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 1.5px;
-    background-color: $basic_black;
-    left: 0;
-    top: 5px;
-  }
+.page__header--closed .page__header-toggle::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: $basic_black;
+  box-shadow: 0 8px 0 0 $basic_black, 0 16px 0 0 $basic_black;
+  // z-index: 100;
 }
 
 // .page-header {
@@ -60,33 +83,40 @@
 //     height: 66px;
 //   }
 // }
-// .page__header--opened {
-//   top: 0;
-//   right: auto;
-//   left: 0;
-//   position: relative;
+.page__header--opened {
+  top: 0;
+  right: 0;
+  // left: 0;
+  // position: relative;
+  // z-index: 99;
 
-//   &::before,
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 5px;
-//     left: 0;
-//     width: 24px;
-//     height: 1.5px;
-//     background-color: $basic_black;
-//   }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
-//   &::before {
-//     transform: rotate(45deg);
-//   }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    width: 24px;
+    height: 1.5px;
+    background-color: $basic_black;
+    cursor: pointer;
+  }
 
-//   &::after {
-//     transform: rotate(-45deg);
-//   }
+  &::before {
+    transform: rotate(45deg);
+  }
 
-//   &:active::before,
-//   &:active::after {
-//     background-color: fade(#ffffff, 30%);
-//   }
-// }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page__header--closed .main-nav {
+    display: none;
+  }
+}

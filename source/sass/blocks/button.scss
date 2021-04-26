@@ -10,4 +10,43 @@
   font-size: inherit;
   line-height: 20px;
   width: 100%;
+
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    // &:hover {
+    //   background-color: $basic_green-2;
+    // }
+
+    // &:active {
+    //   color: rgba(255, 255, 255, 0.3);
+    // }
+    // }
+    // &:hover {
+    //   background-color: $basic_green-2;
+    // }
+
+    // &:active {
+    //   color: $basic_white;
+    //   opacity: 0.3;
+    // }
+  }
 }
+// .button[href] {
+//   @media (min-width: $tablet-width) {
+//     &:hover {
+//       background-color: $basic_green-2;
+//     }
+
+//     &:active {
+//       background-color: $basic_green-2;
+//       opacity: 0.3;
+//     }
+//   }
+// }
