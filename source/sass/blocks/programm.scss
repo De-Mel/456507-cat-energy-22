@@ -229,6 +229,14 @@
   width: 100%;
   margin-bottom: 14px;
 
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  // &:invalid {
+  //   border: 2px solid #ff8282;
+  // }
+
   &__email {
     background-image: url("../img/icon_email.svg");
     background-repeat: no-repeat;
@@ -249,8 +257,11 @@
 
 .programm__form-field[type="text"],
 .programm__form-field[type="number"],
+.programm__form-field[type="email"],
+.programm__form-field[type="tel"],
 .programm__form-field::placeholder,
-.programm__form-textarea::placeholder {
+.programm__form-textarea::placeholder,
+.programm__form-textarea {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
