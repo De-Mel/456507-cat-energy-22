@@ -232,4 +232,13 @@
   line-height: 20px;
   color: $special_dark-grey;
   background-color: $basic_grey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
