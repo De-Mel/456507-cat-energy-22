@@ -83,7 +83,7 @@
 //     height: 66px;
 //   }
 // }
-.page__header--opened {
+.page__header--opened .page__header-toggle {
   top: 0;
   right: 0;
   // left: 0;
@@ -99,7 +99,7 @@
     content: "";
     position: absolute;
     top: 28px;
-    right: 20px;
+    right: 0;
     width: 24px;
     height: 1.5px;
     background-color: $basic_black;
