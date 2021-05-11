@@ -107,43 +107,117 @@
   line-height: 18px;
   color: $special_dark-grey;
   margin: 0;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-right: 22px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-footer__social-vk {
-    width: 32px;
-    // height: 22px;
+// @media (min-width: $tablet-width) {
+//   .page-footer__social-vk {
+//     width: 32px;
+//     // height: 22px;
 
-    &:hover {
-      stroke: #68b738;
-      // stroke-width: 1.1;
-    }
+//     &:hover {
+//       stroke: #68b738;
+//       // stroke-width: 1.1;
+//     }
+//   }
+
+//   .page-footer__social-inst {
+//     width: 23px;
+//     // height: 23px;
+
+//     &:hover {
+//       stroke: #68b738;
+//       // stroke-width: 1.1;
+//     }
+//   }
+
+//   .page-footer__social-fb {
+//     width: 28px;
+//     // height: 23px;
+
+//     &:hover {
+//       fill: #68b738;
+//       // stroke-width: 1.1;
+//     }
+//   }
+// }
+.page-footer__social-vk {
+  &:hover {
+    stroke: $basic_green;
   }
 
-  .page-footer__social-inst {
-    width: 23px;
-    // height: 23px;
-
-    &:hover {
-      stroke: #68b738;
-      // stroke-width: 1.1;
-    }
+  &:active {
+    opacity: 0.3;
   }
 
-  .page-footer__social-fb {
+  @media (min-width: $tablet-width) {
     width: 28px;
-    // height: 23px;
-
-    &:hover {
-      fill: #68b738;
-      // stroke-width: 1.1;
-    }
+    height: 18px;
   }
 }
+
+.page-footer__social-insta {
+  &:hover {
+    stroke: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.page-footer__social-fb {
+  fill: none;
+  stroke: $special_grey-2;
+
+  &:hover {
+    stroke: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 27px;
+  }
+}
+
+.page-footer__social-ha {
+  fill: $special_grey-2;
+
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.3;
+  }
+}
+
+// .page-footer__social-ha:hover {
+//   fill: $basic_green;
+// }
+
+// .page-footer__social-ha:active {
+//   fill: $basic_green;
+//   opacity: 0.3;
+// }
 
 // .social-img {
 //   display: flex;
