@@ -228,25 +228,51 @@
   height: 45px;
   width: 100%;
   margin-bottom: 14px;
+  // position: relative;
 
   &:hover {
     border: 1px solid $special_grey;
   }
 
-  // &:invalid {
-  //   border: 2px solid #ff8282;
-  // }
+
+
+  &:focus + .programm__form-field__email {
+    stroke: $basic_green;
+  }
+
+  &:focus + .programm__form-field__phone:hover {
+    stroke: $basic_green;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:invalid + .programm__form-field__email,
+  &:invalid + .programm__form-field__phone {
+    stroke: #ff8282;
+    // fill: #ff8282;
+  }
+
+  &:invalid .programm__form-field__phone:hover {
+    fill: black;
+  }
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
 
   &__email {
-    background-image: url("../img/icon_email.svg");
-    background-repeat: no-repeat;
-    background-position: right 15px center;
+    position: absolute;
+    right: 15px;
+    top: 16px;
+    stroke: $special_dark-grey-2;
   }
 
   &__phone {
-    background-image: url("../img/icon_phone.svg");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
+    position: absolute;
+    right: 13px;
+    top: 13px;
   }
 
   @media (min-width: $tablet-width) {
@@ -266,7 +292,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  padding-left: 14px;
+  padding-left: 7px;
   color: $special_dark-grey;
   text-transform: uppercase;
   letter-spacing: 0.01px;
