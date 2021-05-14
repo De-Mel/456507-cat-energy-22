@@ -42,7 +42,7 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-d.svg">
+            <!-- <source media="(min-width: 1440px)" srcset="img/logo-d.svg"> -->
             <img class="main-nav__logo" src="img/logo-t.svg" width="174" height="52" alt="логотип">
           </picture>
           <ul class="main-nav__list site--list">
@@ -199,10 +199,13 @@
                       Было
                       <span class="visually-hidden">Предыдущий слайд</span>
                     </button>
-                    <picture>
+                    <!-- <picture>
                       <source media="(min-width: 768px)" srcset="img/slider-t.svg">
                       <img src="img/slider.svg" width="84" height="14" alt="скрол для слайдера">
-                    </picture>
+                    </picture> -->
+                    <div class="slidecontainer">
+                      <input class="slider__range" type="range" id="myRange">
+                    </div>
                     <button class="slider__button slider__button-next" type="button">
                       Стало
                       <span class="visually-hidden">Следующий слайд</span>
