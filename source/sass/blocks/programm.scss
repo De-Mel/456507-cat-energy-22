@@ -27,6 +27,10 @@
     @media (min-width: $tablet-width) {
       min-height: 174px;
     }
+
+    @media (min-width: $desktop-width) {
+      max-width: 1220px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -228,6 +232,7 @@
   height: 45px;
   width: 100%;
   margin-bottom: 14px;
+  outline: 0;
   // position: relative;
 
   &:hover {
@@ -235,12 +240,11 @@
   }
 
 
-
   &:focus + .programm__form-field__email {
     stroke: $basic_green;
   }
 
-  &:focus + .programm__form-field__phone:hover {
+  &:focus + .programm__form-field__phone {
     stroke: $basic_green;
   }
 
@@ -254,12 +258,13 @@
     // fill: #ff8282;
   }
 
-  &:invalid .programm__form-field__phone:hover {
-    fill: black;
-  }
+  // &:invalid .programm__form-field__phone:hover {
+  //   fill: black;
+  // }
 
   &:focus {
     border: 2px solid $special_dark-grey;
+    outline: 0;
   }
 
   &__email {
