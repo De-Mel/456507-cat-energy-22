@@ -198,14 +198,15 @@
 }
 
 .page-footer__social-ha {
-  fill: $special_grey-2;
+  // fill: $special_grey-2;
 
   &:hover {
-    fill: $basic_green;
+    stroke: $basic_green;
+    // fill: $basic_green;
   }
 
   &:active {
-    fill: $basic_green;
+    stroke: $basic_green;
     opacity: 0.3;
   }
 }

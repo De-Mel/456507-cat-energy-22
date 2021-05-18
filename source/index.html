@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon32.svg"><!-- 152×152 -->
   </head>
   <body class="page__body">
-    <div style="display: none;">
+    <!-- <div style="display: none;">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol id="icon-htmlacademy" viewBox="0 0 27 34">
           <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
@@ -25,7 +25,7 @@
           <path d="M11.5 0.833252H8.75002C7.53445 0.833252 6.36866 1.30674 5.50911 2.14957C4.64957 2.99239 4.16669 4.1355 4.16669 5.32743V8.02394H1.41669V11.6193H4.16669V18.81H7.83335V11.6193H10.5834L11.5 8.02394H7.83335V5.32743C7.83335 5.08905 7.92993 4.86042 8.10184 4.69186C8.27375 4.52329 8.50691 4.4286 8.75002 4.4286H11.5V0.833252Z" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
       </svg>
-    </div>
+    </div> -->
     <header class="page__header page__header--closed">
       <div class="container">
         <div class="page__header-wrapper">
@@ -234,7 +234,11 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта проезда</h2>
-        <img class="map__image" src="img/location-d.jpg" width="320" height="362" alt="Карта">
+        <picture >
+          <source media="(min-width: 1440px)" srcset="img/location-desktop-1@1x.jpg 1x, img/location-desktop-1@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/location-tablet-1@1x.jpg 1x, img/location-tablet-1@2x.jpg 2x">
+          <img class="map__image" src="img/location-mobile-1@1x.jpg" srcset="img/location-mobile-1@2x.jpg 2x" alt="карта проезда">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">
@@ -248,7 +252,7 @@
               <a href="" class="page-footer__social-link">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="page-footer__social-vk" width="23" height="16" aria-label="Логотип vkontakte">
-                  <use xlink:href="#icon-vk"></use>
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
@@ -256,7 +260,7 @@
               <a href="" class="page-footer__social-link">
                 <span class="visually-hidden">Инстаграм</span>
                 <svg class="page-footer__social-insta" width="20" height="20" aria-label="Логотип instagram">
-                  <use xlink:href="#icon-insta"></use>
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -264,7 +268,7 @@
               <a href="" class="page-footer__social-link">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="page-footer__social-fb" width="11" height="18" aria-label="Логотип facebook">
-                  <use xlink:href="#icon-fb"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -276,7 +280,7 @@
             <a href="https://htmlacademy.ru/intensive/adaptive">
               <!-- <img src="img/logo_html.svg" width="27" height="34" alt="Лого HTML"> -->
               <svg class="page-footer__social-ha" width="27" height="34" aria-label="Логотип Htmlacademy">
-                <use xlink:href="#icon-htmlacademy"></use>
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
@@ -284,20 +288,5 @@
       </div>
     </footer>
   </body>
-  <script>
-    var navMain = document.querySelector('.page__header');
-    var navToggle = document.querySelector('.page__header-toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('page__header--closed')) {
-        navMain.classList.remove('page__header--closed');
-        navMain.classList.add('page__header--opened');
-      } else {
-        navMain.classList.add('page__header--closed');
-        navMain.classList.remove('page__header--opened');
-      }
-    });
-  </script>
+  <script src="js/menu.js"></script>
 </html>
