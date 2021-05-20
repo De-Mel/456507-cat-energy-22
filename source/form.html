@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon32.svg"><!-- 152×152 -->
   </head>
   <body class="page__body">
-    <div style="display: none;">
+    <!-- <div style="display: none;">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol id="icon-htmlacademy" viewBox="0 0 27 34">
           <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
@@ -31,7 +32,7 @@
           <g clip-path="url(#clip0)" fill="#000"><path d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 000-.904l-3.1-3.11-.9.903 2.1 2.007zM8.1 19.787v-6.221a.653.653 0 00-.6-.602H3.1a1.226 1.226 0 001.2 1.204h2.5v5.017H3.1a1.784 1.784 0 01-1.728-1.02 1.801 1.801 0 01-.172-.686V3.431a1.78 1.78 0 01.483-1.25A1.767 1.767 0 012.9 1.624h3.9v5.017H4.4a1.218 1.218 0 00-1.2 1.204h4.4a.649.649 0 00.6-.602V.923A.863.863 0 007.5.32H3.1a2.99 2.99 0 00-2.151.81A3.01 3.01 0 000 3.23v13.948a2.91 2.91 0 00.772 2.192 2.89 2.89 0 002.128.919h4.6a.499.499 0 00.6-.502z"/></g><defs><clipPath id="clip0"><path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z"/></clipPath></defs>
         </symbol>
       </svg>
-    </div>
+    </div> -->
     <header class="page__header page__header--closed">
       <div class="container">
         <div class="page__header-wrapper">
@@ -119,14 +120,14 @@
                 <label class="programm__form-label" for="email">E-mail:*</label>
                 <input class="programm__form-field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
                 <svg class="programm__form-field__email" width="19" height="14">
-                  <use xlink:href="#icon-email"></use>
+                  <use xlink:href="img/sprite.svg#icon_email"></use>
                 </svg>
               </div>
               <div class="programm__wrapper">
                 <label class="programm__form-label" for="tel">Телефон:*</label>
                 <input class="programm__form-field programm__form-field__phon" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="8 (960) 900-60-90">
                 <svg class="programm__form-field__phone" width="20" height="21">
-                  <use xlink:href="#icon-phone"></use>
+                  <use xlink:href="img/sprite.svg#icon_phone"></use>
                 </svg>
               </div>
             </fieldset>
@@ -185,7 +186,11 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта проезда</h2>
-        <img class="map__image" src="img/location-d.jpg" width="320" height="362" alt="Карта">
+        <picture >
+          <source media="(min-width: 1440px)" srcset="img/location-desktop-1@1x.jpg 1x, img/location-desktop-1@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/location-tablet-1@1x.jpg 1x, img/location-tablet-1@2x.jpg 2x">
+          <img class="map__image" src="img/location-mobile-1@1x.jpg" srcset="img/location-mobile-1@2x.jpg 2x" alt="карта проезда">
+        </picture>
       </section>
 
     </main>
@@ -200,7 +205,7 @@
               <a href="" class="page-footer__social-link">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg class="page-footer__social-vk" width="23" height="16" aria-label="Логотип vkontakte">
-                  <use xlink:href="#icon-vk"></use>
+                  <use xlink:href="img/sprite.svg#icon_vk"></use>
                 </svg>
               </a>
             </li>
@@ -208,7 +213,7 @@
               <a href="" class="page-footer__social-link">
                 <span class="visually-hidden">Инстаграм</span>
                 <svg class="page-footer__social-insta" width="20" height="20" aria-label="Логотип instagram">
-                  <use xlink:href="#icon-insta"></use>
+                  <use xlink:href="img/sprite.svg#icon_insta"></use>
                 </svg>
               </a>
             </li>
@@ -216,7 +221,7 @@
               <a href="" class="page-footer__social-link">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="page-footer__social-fb" width="11" height="18" aria-label="Логотип facebook">
-                  <use xlink:href="#icon-fb"></use>
+                  <use xlink:href="img/sprite.svg#icon_fb"></use>
                 </svg>
               </a>
             </li>
@@ -226,9 +231,8 @@
               HTML Academy
             </a>
             <a href="https://htmlacademy.ru/intensive/adaptive">
-              <!-- <img src="img/logo_html.svg" width="27" height="34" alt="Лого HTML"> -->
               <svg class="page-footer__social-ha" width="27" height="34" aria-label="Логотип Htmlacademy">
-                <use xlink:href="#icon-htmlacademy"></use>
+                <use xlink:href="img/sprite.svg#icon_html_ academy"></use>
               </svg>
             </a>
           </div>
@@ -236,20 +240,6 @@
       </div>
     </footer>
   </body>
-  <script>
-    var navMain = document.querySelector('.page__header');
-    var navToggle = document.querySelector('.page__header-toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('page__header--closed')) {
-        navMain.classList.remove('page__header--closed');
-        navMain.classList.add('page__header--opened');
-      } else {
-        navMain.classList.add('page__header--closed');
-        navMain.classList.remove('page__header--opened');
-      }
-    });
-  </script>
+  <script src="js/menu.js"></script>
+  <script src="js/menu.min.js"></script>
 </html>

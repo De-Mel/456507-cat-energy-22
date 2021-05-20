@@ -4,11 +4,15 @@
 
 .map__image {
   width: 100%;
-  min-height: 302px;
+  max-height: 362px;
   overflow: hidden;
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
+    max-height: 362px;
+  }
+
+  @media (min-width: $desktop-width) {
     max-height: 400px;
   }
 }
