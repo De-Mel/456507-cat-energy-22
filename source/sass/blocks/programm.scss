@@ -242,6 +242,7 @@
 
   &:focus + .programm__form-field__email {
     stroke: $basic_green;
+    fill: $basic_white;
   }
 
   &:focus + .programm__form-field__phone {
@@ -272,6 +273,7 @@
     right: 15px;
     top: 16px;
     stroke: $special_dark-grey-2;
+    fill: $basic_white;
   }
 
   &__phone {

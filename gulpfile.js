@@ -22,7 +22,10 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer(),
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest('build/css'))
+    .pipe(postcss([
       csso()
     ]))
     .pipe(rename("style.min.css"))
@@ -48,7 +51,7 @@ exports.html = html;
 const scripts = () => {
   return gulp.src("source/js/menu.js")
     .pipe(terser())
-    .pipe(rename("scripts.min.js"))
+    .pipe(rename("menu.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
@@ -89,12 +92,12 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/sprite.svg")
+  return gulp.src("source/img/icon/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/icons"));
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.sprite = sprite;
