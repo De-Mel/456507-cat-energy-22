@@ -292,8 +292,8 @@
 .programm__form-field[type="number"],
 .programm__form-field[type="email"],
 .programm__form-field[type="tel"],
-.programm__form-field::placeholder,
-.programm__form-textarea::placeholder,
+// .programm__form-field::placeholder,
+// .programm__form-textarea::placeholder,
 .programm__form-textarea {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -303,14 +303,20 @@
   color: $special_dark-grey;
   text-transform: uppercase;
   letter-spacing: 0.01px;
+  // padding-top: 13px;
   // align-self: center;
   // align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 10px;
   }
 }
+
+// .programm__form-field[type="text"] {
+//   padding-top: 10px;
+// }
 
 .programm__form-radio {
   margin-bottom: 13px;

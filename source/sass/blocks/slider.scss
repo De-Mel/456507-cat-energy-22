@@ -166,6 +166,15 @@
     appearance: none;
   }
 
+  &::-moz-range-thumb {
+    height: 6px;
+    width: 35px;
+    border-radius: 6px;
+    background: $basic_green;
+    appearance: none;
+  }
+
+
   @media (min-width: $tablet-width) {
     appearance: none;
     width: 428px;
@@ -175,6 +184,26 @@
     outline: none;
 
     &::-webkit-slider-thumb {
+      appearance: none;
+      width: 34px;
+      height: 34px;
+      background: $basic_green;
+      border-radius: 50%;
+      cursor: pointer;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), inset 0 0 0 1px #cdcdcd, inset 0 0 0 12px #ffffff;
+
+      &:hover {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+      }
+
+      &:active {
+        border: 1px solid $basic_green;
+        filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+      }
+    }
+
+    &::-moz-range-thumb {
       appearance: none;
       width: 34px;
       height: 34px;
