@@ -12,6 +12,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const favicon = require("favicon");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -78,6 +79,15 @@ const copyImages = () => {
 }
 
 exports.copyImages = copyImages;
+
+//Favicon
+
+const copyFavicon = () => {
+  return gulp.src("source/**/*.{png,jpg,svg}")
+    .pipe(gulp.dest("build"))
+}
+
+exports.copyFavicon = copyFavicon;
 
 // WebP
 
@@ -180,6 +190,7 @@ exports.default = gulp.series(
   clean,
   copy,
   copyImages,
+  copyFavicon,
   gulp.parallel(
     styles,
     html,

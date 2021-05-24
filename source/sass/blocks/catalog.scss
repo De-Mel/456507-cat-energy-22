@@ -11,7 +11,7 @@
 .catalog__wrapper {
   background-color: $basic_grey;
   padding: 0 33px 18px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     padding: 0 279px 53px 52px;
@@ -37,7 +37,7 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $basic_black;
-  padding: 30px 0 29px 71px;
+  padding: 32px 0 29px 71px;
   margin: 0;
   position: relative;
 
@@ -50,8 +50,8 @@
     background-size: contain;
     width: 67px;
     height: 50px;
-    top: 24px;
-    left: -10px;
+    top: 25px;
+    left: -6px;
   }
 
   &-gain::before {
@@ -63,14 +63,14 @@
     background-size: contain;
     width: 67px;
     height: 50px;
-    top: 24px;
-    left: -10px;
+    top: 27px;
+    left: -7px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 77px 0 24px;
+    padding: 79px 0 24px;
     // position: relative;
 
     &-slim::before {
@@ -94,9 +94,9 @@
       background-size: contain;
       width: 268px;
       height: 200px;
-      top: 91px;
+      top: 94px;
       left: auto;
-      right: -286px;
+      right: -285px;
     }
   }
 
@@ -124,8 +124,8 @@
       background-size: contain;
       width: 134px;
       height: 100px;
-      top: 41px;
-      left: 0;
+      top: 44px;
+      left: -18px;
       right: -286px;
     }
   }
@@ -140,7 +140,7 @@
   color: $special_dark-grey;
   margin: 0;
   position: relative;
-  padding-bottom: 38px;
+  padding-bottom: 41px;
 
   &::after {
     content: "";
@@ -163,7 +163,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 23px;
+    padding-bottom: 25px;
   }
 }
 
@@ -203,12 +203,18 @@
     line-height: 30px;
 
     &::before {
-      top: 10px;
-      left: 133px;
+      top: 11px;
+      left: 129px;
     }
   }
 
   &-icon {
     margin-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      left: 134px;
+    }
   }
 }

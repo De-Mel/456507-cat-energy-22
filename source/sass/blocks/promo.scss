@@ -27,12 +27,14 @@
     padding-bottom: 29px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 88px;
+      padding-left: 87px;
+      padding-top: 0;
+      padding-bottom: 20px;
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 223px;
-      // padding-bottom: 52px;
+      padding-left: 80px;
     }
 
     &--img {
@@ -59,7 +61,7 @@
       position: relative;
       max-height: 696px;
       top: -140px;
-      margin-bottom: -62px;
+      margin-bottom: -58px;
 
       &::before {
         content: "";
@@ -124,14 +126,14 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     position: relative;
-    bottom: 290px;
-    left: 113px;
+    bottom: 283px;
+    left: 114px;
   }
 }
 
 .promo__button {
   display: block;
-  padding: 16px 15px;
+  padding: 13px 15px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -143,5 +145,11 @@
     font-size: 20px;
     line-height: 20px;
     max-width: 244px;
+    padding: 17px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 32px;
+    left: 80px;
   }
 }

@@ -1,15 +1,15 @@
 .additional {
-  padding-top: 25px;
+  padding-top: 22px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    padding-top: 68px;
+    padding-top: 83px;
   }
 
   &__title {
     font-size: 24px;
     line-height: 24px;
-    padding-bottom: 23px;
+    padding-bottom: 20px;
     max-width: 248px;
     position: relative;
 
@@ -20,7 +20,6 @@
       height: 2px;
       background-color: $basic_green;
       top: 15px;
-      // z-index: -1;
       left: 100%;
     }
 
@@ -39,8 +38,11 @@
         height: 2px;
         background-color: $basic_green;
         top: 20px;
-        // z-index: -1;
         right: 100%;
+
+        @media (min-width: $desktop-width) {
+          top: 27px;
+        }
       }
 
       &::after {
@@ -50,13 +52,21 @@
         height: 2px;
         background-color: $basic_green;
         top: 15px;
-        // z-index: -1;
         left: 100%;
 
         @media (min-width: $tablet-width) {
           top: 20px;
         }
+
+        @media (min-width: $desktop-width) {
+          top: 27px;
+        }
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: -40px;
+      padding: 6px 40px 80px;
     }
   }
 
@@ -72,7 +82,7 @@
       content: "";
       position: absolute;
       border-top: 1px solid $special_grey;
-      top: 13px;
+      top: 17px;
       width: 100%;
     }
 
@@ -115,7 +125,7 @@
     grid-template-columns: 1fr 1fr;
     // grid-row-gap: 28px;
     border: 1px solid #cdcdcd;
-    padding: 26px 38px 28px;
+    padding: 26px 38px 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -152,11 +162,21 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 12px;
-    margin-left: 20px;
+    margin-left: 26px;
+
+    &-rigth {
+      text-align: right;
+      margin-right: -15px;
+    }
   }
 }
 
 .additional__button {
+  &:focus {
+    border: 1px solid $special_dark-grey;
+    outline: 0;
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1/4;
   }
@@ -220,29 +240,6 @@
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
   }
-
-  // &::before {
-  //   content: "";
-  //   width: 100%;
-  //   height: 100%;
-  //   position: absolute;
-  //   background-image: url("../img/icon_basket.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center 58px;
-
-  //   @media (min-width: $tablet-width) {
-  //     // background-position: 78px 57px;
-  //     // background-size: cover;
-  //     top: 24%;
-  //     // right: 33%;
-  //     left: -234px;
-  //   }
-
-  //   @media (min-width: $desktop-width) {
-  //     top: 0;
-  //     left: 0;
-  //   }
-  // }
 
   &::after {
     content: "";

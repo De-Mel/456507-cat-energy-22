@@ -1,5 +1,5 @@
 .programm {
-  margin-bottom: 26px;
+  margin-bottom: 36px;
   border-top: 1px solid #d9d9d9;
   overflow: hidden;
 
@@ -7,14 +7,14 @@
     margin: 0;
     padding: 0;
     border: none;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 71px;
+      margin-bottom: 75px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 69px;
+      margin-bottom: 50px;
     }
   }
 
@@ -35,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
     border-top: none;
-    margin-bottom: 72px;
+    margin-bottom: 67px;
     padding: 0 37px 0 40px;
   }
 
@@ -77,6 +77,10 @@
       font-size: 16px;
       margin-top: 15px;
       text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 19px;
     }
   }
 
@@ -138,11 +142,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 57px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 82px;
   }
 }
 
@@ -152,10 +158,10 @@
   position: relative;
 
   &:nth-child(3) {
-    margin-bottom: 23px;
+    margin-bottom: 31px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 72px;
+      margin-bottom: 52px;
     }
 
     @media (min-width: $desktop-width) {
@@ -192,7 +198,7 @@
     border-bottom: 1px solid #d9d9d9;
     left: 0;
     width: 100%;
-    margin-top: 7px;
+    margin-top: 8px;
   }
 
   @media (min-width: $tablet-width) {
@@ -209,7 +215,7 @@
 @media (min-width: $tablet-width) {
   .programm__wrapper-border {
     border: 1px solid #e7e7e7;
-    padding: 25px 0 16px 28px;
+    padding: 23px 0 16px 28px;
     height: 196px;
     // position: relative;
   }
@@ -224,6 +230,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-right: 17px;
   }
 }
 
@@ -233,7 +240,6 @@
   width: 100%;
   margin-bottom: 14px;
   outline: 0;
-  // position: relative;
 
   &:hover {
     border: 1px solid $special_grey;
@@ -256,12 +262,7 @@
   &:invalid + .programm__form-field__email,
   &:invalid + .programm__form-field__phone {
     stroke: #ff8282;
-    // fill: #ff8282;
   }
-
-  // &:invalid .programm__form-field__phone:hover {
-  //   fill: black;
-  // }
 
   &:focus {
     border: 2px solid $special_dark-grey;
@@ -299,24 +300,18 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  padding-left: 7px;
+  padding-left: 14px;
   color: $special_dark-grey;
   text-transform: uppercase;
   letter-spacing: 0.01px;
-  // padding-top: 13px;
-  // align-self: center;
-  // align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px;
+    // padding: 10px;
+    padding-left: 18px;
   }
 }
-
-// .programm__form-field[type="text"] {
-//   padding-top: 10px;
-// }
 
 .programm__form-radio {
   margin-bottom: 13px;
@@ -327,10 +322,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-
-    // &:last-child {
-    //   margin-bottom: 0;
-    // }
   }
 }
 
@@ -344,10 +335,9 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
   cursor: pointer;
-  // position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-right: 28px;
+    margin-right: 34px;
   }
 
   &::before {
@@ -397,6 +387,11 @@
   &:disabled + .programm__form-radio {
     opacity: 0.3;
   }
+
+  &:focus::before {
+    border: 2px solid $special_dark-grey;
+    outline: 0;
+  }
 }
 
 /* Chechbox */
@@ -405,7 +400,7 @@
   display: flex;
   align-items: baseline;
   position: relative;
-  padding: 6px 0 6px 4px;
+  padding: 5px 0 6px 4px;
 }
 
 .programm__form-field__checkbox {
@@ -419,6 +414,11 @@
   clip: rect(0 0 0 0);
   cursor: pointer;
   // position: relative;
+
+  // &:focus + .programm__form-checkbox::before {
+  //   stroke: $basic_green;
+  //   fill: $basic_white;
+  // }
 
   @media (min-width: $tablet-width) {
     margin-right: 30px;
@@ -472,18 +472,30 @@
   &:disabled + .programm__form-checkbox {
     opacity: 0.3;
   }
+
+  &:focus::before {
+    border: 2px solid $special_dark-grey;
+    outline: 0;
+  }
 }
 
 .programm__inner {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 57px;
+    margin-top: -54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 81px;
+    margin-top: -22px;
   }
 }
 
 .programm__button {
   // display: block;
-  padding: 14px 25px;
+  padding: 10px 25px;
   text-transform: uppercase;
   border: none;
 
@@ -497,6 +509,7 @@
     @media (min-width: $tablet-width) {
       font-size: 20px;
       max-width: 282px;
+      padding: 17px 25px;
     }
 
     @media (min-width: $desktop-width) {
