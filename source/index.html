@@ -13,7 +13,7 @@
     <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
-    <header class="page__header page__header--closed main-nav--nojs">
+    <header class="page__header page__header--closed page__header--nojs">
       <div class="container">
         <div class="page__header-wrapper">
           <a class="page__header-logoicon" href="index.html">
@@ -31,7 +31,7 @@
           <picture>
             <img class="main-nav__logo" src="img/logo-t.svg" width="174" height="52" alt="логотип">
           </picture>
-          <ul class="main-nav__list site--list">
+          <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="#">
                 Главная
@@ -62,7 +62,7 @@
               Занялся собой? Займись котом!
             </p>
           </div>
-          <div class="promo__content--img">
+          <div class="promo__img">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/can-desktop-1@1x.webp 1x, img/can-desktop-1@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/can-tablet-1@1x.webp 1x, img/can-tablet-1@2x.webp 2x">
@@ -154,26 +154,24 @@
                 <dd class="example__both-text arial-grey">затрачено времени</dd>
               </dl>
               <p class="example__total">
-                Затраты на питание:<br> 15 000 РУБ.
+                Затраты на питание:<br> <span>15 000 РУБ.</span>
               </p>
             </div>
           </div>
-          <div class="slider__container">
-            <div class="slider">
-              <div class="slider__cats"></div>
-                <div class="slider__wrapper">
-                  <button class="slider__button slider__button-prev" type="button">
-                    Было
-                    <span class="visually-hidden">Предыдущий слайд</span>
-                  </button>
-                  <div class="slidecontainer">
-                    <input class="slider__range" type="range" id="myRange">
-                  </div>
-                  <button class="slider__button slider__button-next" type="button">
-                    Стало
-                    <span class="visually-hidden">Следующий слайд</span>
-                  </button>
-                </div>
+          <div class="slider">
+            <div class="slider__cats"></div>
+            <div class="slider__wrapper">
+              <button class="slider__button slider__button-prev" type="button">
+                Было
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <div class="slidecontainer">
+                <input class="slider__range" type="range" id="myRange">
+              </div>
+              <button class="slider__button slider__button-next" type="button">
+                Стало
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
             </div>
           </div>
         </div>
@@ -188,7 +186,7 @@
             <p class="contacts__text arial-grey">
               ул. Большая
               Конюшенная, д. 19/8
-              Санкт-Петербург
+              <span>Санкт-Петербург</span>
             </p>
           </div>
         </div>

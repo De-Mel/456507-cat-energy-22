@@ -64,9 +64,19 @@
     font-size: 16px;
     max-width: 159px;
     text-align: right;
+
+    & span {
+      display: inline-block;
+      margin-top: 19px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+
+    & span {
+      display: inline-block;
+      margin-top: 19px;
+    }
   }
 }

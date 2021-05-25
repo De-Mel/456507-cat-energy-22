@@ -11,7 +11,7 @@
   @media (min-width: $desktop-width) {
     padding: 0 110px;
     z-index: 3;
-    min-height: 187px;
+    // min-height: 187px;
   }
 
   &__list {
@@ -151,11 +151,11 @@
   }
 }
 
-.main-nav--nojs .main-nav__wrapper {
-  position: static;
-  // min-height: 0;
-}
+// .page__header--nojs .main-nav__wrapper {
+//   position: static;
+//   // min-height: 0;
+// }
 
-.main-nav--nojs .main-nav {
-  display: block;
-}
+// .page__header--nojs .main-nav {
+//   display: block;
+// }

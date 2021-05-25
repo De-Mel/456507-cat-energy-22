@@ -163,8 +163,9 @@
     text-align: right;
     padding-top: 72px;
 
-    & br {
-      margin-bottom: 10px;
+    & span {
+      display: inline-block;
+      margin-top: 10px;
     }
   }
 
@@ -172,6 +173,10 @@
     grid-column: 1/2;
     text-align-last: left;
     padding-top: 39px;
+
+    & span {
+      margin-left: 63px;
+    }
   }
 }
 

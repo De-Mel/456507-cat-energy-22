@@ -75,7 +75,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 28px;
+    top: 34px;
     right: 0;
     width: 24px;
     height: 1.5px;
@@ -97,3 +97,12 @@
     display: none;
   }
 }
+
+// .page__header--nojs .main-nav__wrapper {
+//   position: static;
+//   min-height: 0;
+// }
+
+// .page__header--nojs .main-nav {
+//   display: block;
+// }
